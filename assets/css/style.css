@@ -1,1 +1,141 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  align-items: center;
+}
+header img {
+  height: 250px;
+  width: 250 px;
+}
+header h1 {
+  font-size: 40px;
+  font-style: italic;
+  text-shadow: 1px 2px 10px rgba(7, 7, 7, 0.5);
+}
+header p {
+  font-size: 30px;
+  text-shadow: 1px 2px 10px rgba(7, 7, 7, 0.5);
+}
+
+nav {
+  background-color: #21b0b4;
+  color: azure;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  border-radius: 50px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+  box-shadow: 2px 4px 10px rgba(160, 158, 158, 0.5);
+  transform: translateY(50%);
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li {
+  list-style: none;
+  padding: 0 10px;
+  margin: 0 10px;
+  font-size: 25px;
+}
+nav ul li:hover {
+  color: #d5007f;
+  text-decoration: underline;
+}
+
+#role {
+  background-color: #e6e4e4;
+  margin: 0 auto;
+  padding-top: 80px;
+  box-shadow: 0px -4px 10px rgba(167, 167, 167, 0.5);
+}
+#role h2 {
+  color: #d5007f;
+  font-size: 50px;
+  padding-left: 50px;
+  font-style: italic;
+}
+#role p {
+  font-size: 25px;
+  padding-left: 20px;
+  padding-bottom: 25px;
+  padding-top: 0px;
+  text-align: center;
+  margin-bottom: 0;
+}
+#role .imgplusliste {
+  border: 1px solid #21b0b4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 5px;
+}
+#role .imgplusliste img {
+  width: 300px;
+  height: 300px;
+}
+#role .imgplusliste li {
+  font-size: 20px;
+}
+
+#actions {
+  box-shadow: 0px -4px 10px rgba(167, 167, 167, 0.5);
+}
+#actions h2 {
+  color: #d5007f;
+  font-size: 50px;
+  padding-left: 50px;
+  padding-top: 25px;
+  font-style: italic;
+  margin-top: 0;
+}
+#actions .articles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#actions .articles article {
+  border: 1px solid #21b0b4;
+  margin: 10px;
+  padding: 10px;
+  height: 325px;
+  margin-bottom: 70px;
+}
+#actions .articles article div {
+  display: flex;
+  justify-content: space-around;
+}
+#actions .articles article div img {
+  width: 200px;
+  height: auto;
+}
+#actions .articles article div h3 {
+  font-size: 30px;
+  text-decoration: underline;
+  text-align: center;
+}
+#actions .articles article p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #e6e4e4;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px -4px 10px rgba(167, 167, 167, 0.5);
+}
+footer a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */
