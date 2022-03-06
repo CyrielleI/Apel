@@ -82,6 +82,7 @@ nav {
     box-shadow: 2px 4px 10px rgb(160, 158, 158, 0.5);
     transform: translateY(50%);
     margin: 0 10px;
+    
     ul {
         display: flex;
         justify-content: space-between;
@@ -92,9 +93,13 @@ nav {
             padding: 0 10px;
             margin: 0 10px;
             font-size: 16px;
-            &:hover {
-                color: $Rose;
-                text-decoration: underline;
+            a {
+                color: antiquewhite;
+                text-decoration: none;
+                &:hover {
+                    color: $Rose;
+                    text-decoration: underline;
+                }
             }
         }
     }
@@ -409,8 +414,12 @@ footer {
     box-shadow: 0px -4px 10px rgba(167, 167, 167, 0.5);
     max-width: 100%;
     text-align: center;
-    a:hover {
-        text-decoration: underline;
+    a {
+        color: black;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }    
     }
 }
 
