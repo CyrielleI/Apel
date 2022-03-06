@@ -323,6 +323,18 @@ nav ul li a:hover {
   #actions .articles article .loto h3 {
     text-align: start;
   }
+  #actions .articles article .chocolat {
+    flex-direction: column;
+  }
+  #actions .articles article .chocolat h3 {
+    text-align: start;
+  }
+  #actions .articles article .sapin {
+    flex-direction: column;
+  }
+  #actions .articles article .sapin h3 {
+    text-align: start;
+  }
 }
 @media screen and (min-width: 2560px) {
   #actions h2 {
@@ -344,6 +356,45 @@ nav ul li a:hover {
   }
 }
 /* fin du layout page index */
+/* début du layout page evenement*/
+.evenement {
+  /*display: flex;
+  flex-direction: column;*/
+}
+.evenement article {
+  border: 2px solid #21b0b4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: calc(100% - 100px);
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #e6e4e4;
+  text-align: center;
+}
+.evenement article img {
+  width: 300px;
+  margin-right: 20px;
+}
+.evenement article h2 {
+  font-size: 40px;
+  margin-top: 0;
+  color: #21b0b4;
+  text-shadow: 1px 2px 10px rgba(7, 7, 7, 0.3);
+}
+.evenement article h3 {
+  font-size: 30px;
+}
+.evenement article .annule {
+  color: red;
+  font-weight: 600;
+  font-size: 30px;
+}
+.evenement article p {
+  font-size: 25px;
+}
+
+/*fin du layout page evenement */
 footer {
   background-color: #e6e4e4;
   height: 40px;

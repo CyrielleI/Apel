@@ -370,6 +370,18 @@ nav {
                         text-align: start;
                     }
                 }
+                .chocolat {
+                    flex-direction: column;
+                    h3 {
+                        text-align: start;
+                    } 
+                }    
+                .sapin {
+                    flex-direction: column;
+                    h3 {
+                        text-align: start;
+                    }
+                }
             }
         }
     }
@@ -403,7 +415,46 @@ nav {
     
 /* fin du layout page index */
 
+/* début du layout page evenement*/
 
+.evenement {
+    /*display: flex;
+    flex-direction: column;*/
+    article {
+        border: 2px solid #21b0b4;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: calc(100% - 100px);
+        margin: 50px auto;
+        padding : 20px;
+        background-color: rgb(230, 228, 228);
+        text-align: center;
+        img {
+            width: 300px;
+            margin-right: 20px;  
+        }
+        h2 {
+            font-size: 40px;
+            margin-top: 0;
+            color: #21b0b4;
+            text-shadow: 1px 2px 10px rgba(7, 7, 7, 0.3);
+        }
+        h3 {
+            font-size: 30px
+        }
+        .annule {
+            color: red;
+            font-weight: 600;
+            font-size: 30px;
+        }
+        p {
+            font-size: 25px;
+        }
+    }
+}
+
+/*fin du layout page evenement */
 
 footer {
     background-color: rgb(230, 228, 228);
