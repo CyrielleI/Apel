@@ -4,6 +4,7 @@ body {
   max-width: 100%;
 }
 
+/* début du layout du header*/
 header {
   position: relative;
   display: flex;
@@ -16,6 +17,7 @@ header img {
   height: 200px;
   width: auto;
   padding-top: 20px;
+  align-items: center;
 }
 header h1 {
   font-size: 40px;
@@ -61,6 +63,8 @@ header p {
     font-size: 55px;
   }
 }
+/* fin du layout du header*/
+/* début du layout de la nav*/
 nav {
   position: relative;
   display: flex;
@@ -128,6 +132,7 @@ nav ul li a:hover {
     padding: 0 40px;
   }
 }
+/* fin du layout de la nav*/
 /* début du layout page index */
 #role {
   background-color: #e6e4e4;
@@ -357,16 +362,12 @@ nav ul li a:hover {
 }
 /* fin du layout page index */
 /* début du layout page evenement*/
-.evenement {
-  /*display: flex;
-  flex-direction: column;*/
-}
 .evenement article {
   border: 2px solid #21b0b4;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-  width: calc(100% - 100px);
+  width: calc(100% - 20px);
   margin: 50px auto;
   padding: 20px;
   background-color: #e6e4e4;
@@ -374,7 +375,6 @@ nav ul li a:hover {
 }
 .evenement article img {
   width: 300px;
-  margin-right: 20px;
 }
 .evenement article h2 {
   font-size: 40px;
@@ -387,6 +387,7 @@ nav ul li a:hover {
 }
 .evenement article .annule {
   color: red;
+  text-decoration: underline;
   font-weight: 600;
   font-size: 30px;
 }
@@ -394,7 +395,130 @@ nav ul li a:hover {
   font-size: 25px;
 }
 
+@media screen and (min-width: 1024px) {
+  .evenement article {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    width: calc(100% - 100px);
+  }
+  .evenement article img {
+    margin-right: 20px;
+    width: 500px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .evenement article img {
+    margin-right: 20px;
+    width: 750px;
+  }
+  .evenement article h2 {
+    font-size: 70px;
+  }
+  .evenement article h3 {
+    font-size: 60px;
+  }
+  .evenement article .annule {
+    font-weight: 800;
+    font-size: 50px;
+  }
+  .evenement article p {
+    font-size: 40px;
+  }
+}
 /*fin du layout page evenement */
+/* début du layout page contact*/
+.contact {
+  margin-top: 70px auto;
+  text-align: center;
+}
+.contact p {
+  font-size: 20px;
+  text-align: center;
+}
+.contact a {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+.contact form fieldset {
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  background-color: #e6e4e4;
+  display: flex;
+  flex-direction: column;
+}
+.contact form fieldset legend {
+  font-style: italic;
+  font-size: 1.1em;
+  padding: 5px;
+}
+.contact form fieldset label {
+  text-align: left;
+}
+.contact form button {
+  padding: 10px;
+  margin-top: 15px;
+}
+.contact form button:hover {
+  background-color: #21b0b4;
+  color: antiquewhite;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  .contact form {
+    margin: 0 auto;
+    width: calc(100% - 200px);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contact p {
+    font-size: 30px;
+  }
+  .contact a {
+    font-size: 30px;
+  }
+  .contact form {
+    margin: 0 auto;
+    width: calc(100% - 400px);
+  }
+}
+@media screen and (min-width: 2560px) {
+  .contact p {
+    font-size: 40px;
+  }
+  .contact a {
+    font-size: 40px;
+  }
+  .contact form {
+    margin: 0 auto;
+    width: calc(100% - 600px);
+    font-size: 40px;
+  }
+  .contact form fieldset input {
+    font-size: 40px;
+  }
+  .contact form fieldset textarea {
+    font-size: 40px;
+  }
+  .contact form button {
+    font-size: 40px;
+  }
+}
+/*fin du layout page contact*/
+/* début du layout du footer*/
 footer {
   background-color: #e6e4e4;
   height: 40px;
@@ -422,4 +546,5 @@ footer a:hover {
   footer {
     font-size: 40px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/* fin du layout du footer*//*# sourceMappingURL=style.css.map */
