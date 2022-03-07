@@ -544,7 +544,7 @@ nav {
 
 @media screen and (min-width: 1024px) {
     .contact {
-        margin-top: 100px;
+        margin-top: 70px;
         margin-bottom: 50px;
         form {
             margin: 0 auto;
@@ -563,6 +563,18 @@ nav {
         form {
             margin: 0 auto;
             width: calc(100% - 400px);
+            font-size: 30px;
+            fieldset {
+                      input {
+                          font-size: 30px;
+                      }
+                      textarea {
+                            font-size: 30px;
+                      }
+            }
+            button {
+                font-size: 30px;
+            }
         }
     }
 }

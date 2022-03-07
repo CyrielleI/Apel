@@ -475,7 +475,7 @@ nav ul li a:hover {
 
 @media screen and (min-width: 1024px) {
   .contact {
-    margin-top: 100px;
+    margin-top: 70px;
     margin-bottom: 50px;
   }
   .contact form {
@@ -493,6 +493,16 @@ nav ul li a:hover {
   .contact form {
     margin: 0 auto;
     width: calc(100% - 400px);
+    font-size: 30px;
+  }
+  .contact form fieldset input {
+    font-size: 30px;
+  }
+  .contact form fieldset textarea {
+    font-size: 30px;
+  }
+  .contact form button {
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 2560px) {
