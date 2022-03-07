@@ -1,9 +1,21 @@
 $Rose : #d5007f;
 $bleu : #21b0b4;
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
 body {
     margin: 0;
     max-width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
 }
 /* début du layout du header*/
 header {
@@ -44,8 +56,9 @@ header {
 @media screen and (min-width: 1440px) {
     header {
         img {
-            height: 350px;
-            width: auto;  
+            height: 300px;
+            width: auto; 
+            margin-left: 30px; 
         }
         h1 {
             font-size: 55px;
@@ -166,7 +179,7 @@ nav {
     display: flex;
     flex-direction: column;
     h2 {
-        color: #d5007f;
+        color: $Rose;
         font-size: 50px;
         padding-left: 50px;
         font-style: italic;
@@ -285,7 +298,7 @@ nav {
     box-shadow: 0px -4px 10px rgba(167, 167, 167, 0.5);
     min-width: 100%;
     h2{
-        color: #d5007f;
+        color: $Rose;
         font-size: 50px;
         padding-left: 50px;
         padding-top: 25px ;
@@ -434,6 +447,7 @@ nav {
         text-align: center;
         img {
             width: 300px;
+            border-radius: 24px;
         }
         h2 {
             font-size: 40px;
@@ -517,7 +531,7 @@ nav {
         display: flex;
         flex-direction: column;
         fieldset { 
-                border: 1px solid lightgray;
+                border: 1px solid black;
                 border-radius: 20px;
                 background-color: rgb(230, 228, 228);
                 display: flex;
@@ -534,6 +548,7 @@ nav {
         button {
                 padding: 10px;
                 margin-top: 15px;
+                transition: all .3s ease-in-out;
                 &:hover {
                     background-color: #21b0b4;
                     color: antiquewhite;
@@ -555,25 +570,25 @@ nav {
 
 @media screen and (min-width: 1440px) {
     .contact {
-        p { font-size: 30px;
+        p { font-size: 20px;
         }
         a {
-            font-size: 30px;   
+            font-size: 20px;   
         }
         form {
             margin: 0 auto;
             width: calc(100% - 400px);
-            font-size: 30px;
+            font-size: 20px;
             fieldset {
                       input {
-                          font-size: 30px;
+                          font-size: 20px;
                       }
                       textarea {
-                            font-size: 30px;
+                            font-size: 20px;
                       }
             }
             button {
-                font-size: 30px;
+                font-size: 20px;
             }
         }
     }

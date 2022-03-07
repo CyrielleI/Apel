@@ -1,7 +1,15 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 body {
   margin: 0;
   max-width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
 }
 
 /* début du layout du header*/
@@ -41,8 +49,9 @@ header p {
 }
 @media screen and (min-width: 1440px) {
   header img {
-    height: 350px;
+    height: 300px;
     width: auto;
+    margin-left: 30px;
   }
   header h1 {
     font-size: 55px;
@@ -375,6 +384,7 @@ nav ul li a:hover {
 }
 .evenement article img {
   width: 300px;
+  border-radius: 24px;
 }
 .evenement article h2 {
   font-size: 40px;
@@ -450,7 +460,7 @@ nav ul li a:hover {
   flex-direction: column;
 }
 .contact form fieldset {
-  border: 1px solid lightgray;
+  border: 1px solid black;
   border-radius: 20px;
   background-color: #e6e4e4;
   display: flex;
@@ -467,6 +477,7 @@ nav ul li a:hover {
 .contact form button {
   padding: 10px;
   margin-top: 15px;
+  transition: all 0.3s ease-in-out;
 }
 .contact form button:hover {
   background-color: #21b0b4;
@@ -485,24 +496,24 @@ nav ul li a:hover {
 }
 @media screen and (min-width: 1440px) {
   .contact p {
-    font-size: 30px;
+    font-size: 20px;
   }
   .contact a {
-    font-size: 30px;
+    font-size: 20px;
   }
   .contact form {
     margin: 0 auto;
     width: calc(100% - 400px);
-    font-size: 30px;
+    font-size: 20px;
   }
   .contact form fieldset input {
-    font-size: 30px;
+    font-size: 20px;
   }
   .contact form fieldset textarea {
-    font-size: 30px;
+    font-size: 20px;
   }
   .contact form button {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 2560px) {
