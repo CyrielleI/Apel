@@ -1,11 +1,23 @@
 $Rose : #d5007f;
 $bleu : #21b0b4;
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
 body {
     margin: 0;
     max-width: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+/* début du layout du header*/
 header {
     position: relative;
     display: flex;
@@ -17,6 +29,7 @@ header {
         height: 200px;
         width: auto;
         padding-top: 20px;
+        align-items: center;
     }
     h1 {
         font-size: 40px;
@@ -43,8 +56,9 @@ header {
 @media screen and (min-width: 1440px) {
     header {
         img {
-            height: 350px;
-            width: auto;  
+            height: 300px;
+            width: auto; 
+            margin-left: 30px; 
         }
         h1 {
             font-size: 55px;
@@ -69,7 +83,9 @@ header {
         }
     }
 }
+/* fin du layout du header*/
 
+/* début du layout de la nav*/
 nav {
     position: relative;
     display: flex;
@@ -82,6 +98,7 @@ nav {
     box-shadow: 2px 4px 10px rgb(160, 158, 158, 0.5);
     transform: translateY(50%);
     margin: 0 10px;
+    
     ul {
         display: flex;
         justify-content: space-between;
@@ -92,9 +109,13 @@ nav {
             padding: 0 10px;
             margin: 0 10px;
             font-size: 16px;
-            &:hover {
-                color: $Rose;
-                text-decoration: underline;
+            a {
+                color: antiquewhite;
+                text-decoration: none;
+                &:hover {
+                    color: $Rose;
+                    text-decoration: underline;
+                }
             }
         }
     }
@@ -146,6 +167,7 @@ nav {
         }
     }
 }
+/* fin du layout de la nav*/
 
 /* début du layout page index */
 #role {
@@ -157,7 +179,7 @@ nav {
     display: flex;
     flex-direction: column;
     h2 {
-        color: #d5007f;
+        color: $Rose;
         font-size: 50px;
         padding-left: 50px;
         font-style: italic;
@@ -276,7 +298,7 @@ nav {
     box-shadow: 0px -4px 10px rgba(167, 167, 167, 0.5);
     min-width: 100%;
     h2{
-        color: #d5007f;
+        color: $Rose;
         font-size: 50px;
         padding-left: 50px;
         padding-top: 25px ;
@@ -365,6 +387,18 @@ nav {
                         text-align: start;
                     }
                 }
+                .chocolat {
+                    flex-direction: column;
+                    h3 {
+                        text-align: start;
+                    } 
+                }    
+                .sapin {
+                    flex-direction: column;
+                    h3 {
+                        text-align: start;
+                    }
+                }
             }
         }
     }
@@ -398,8 +432,198 @@ nav {
     
 /* fin du layout page index */
 
+/* début du layout page evenement*/
+
+.evenement {
+    article {
+        border: 2px solid #21b0b4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% - 20px);
+        margin: 50px auto;
+        padding : 20px;
+        background-color: rgb(230, 228, 228);
+        text-align: center;
+        img {
+            width: 300px;
+            border-radius: 24px;
+        }
+        h2 {
+            font-size: 40px;
+            margin-top: 0;
+            color: #21b0b4;
+            text-shadow: 1px 2px 10px rgba(7, 7, 7, 0.3);
+        }
+        h3 {
+            font-size: 30px
+        }
+        .annule {
+            color: red;
+            text-decoration: underline;
+            font-weight: 600;
+            font-size: 30px;
+        }
+        p {
+            font-size: 25px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .evenement {
+        article {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: center;
+            width: calc(100% - 100px);
+            img {
+                margin-right: 20px;
+                width: 500px;  
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .evenement {
+        article {
+            img {
+                margin-right: 20px;
+                width: 750px;  
+            }
+            h2 {
+                font-size: 70px;
+            }
+            h3 {
+                font-size: 60px
+            }
+            .annule {
+                font-weight: 800;
+                font-size: 50px;
+            }
+            p {
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+/*fin du layout page evenement */
+
+/* début du layout page contact*/
+.contact {
+    margin-top: 70px auto;
+    text-align: center;
+    p { font-size: 20px;
+        text-align: center;
+    }
+    a {
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }   
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        fieldset { 
+                border: 1px solid black;
+                border-radius: 20px;
+                background-color: rgb(230, 228, 228);
+                display: flex;
+                flex-direction: column;
+                legend {
+                    font-style: italic;
+                    font-size: 1.1em;
+                    padding: 5px;   
+                }
+                label {
+                    text-align: left;
+                }
+        }
+        button {
+                padding: 10px;
+                margin-top: 15px;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    background-color: #21b0b4;
+                    color: antiquewhite;
+                }
+        }
+    }    
+}
+
+@media screen and (min-width: 1024px) {
+    .contact {
+        margin-top: 70px;
+        margin-bottom: 50px;
+        form {
+            margin: 0 auto;
+            width: calc(100% - 200px);
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .contact {
+        p { font-size: 20px;
+        }
+        a {
+            font-size: 20px;   
+        }
+        form {
+            margin: 0 auto;
+            width: calc(100% - 400px);
+            font-size: 20px;
+            fieldset {
+                      input {
+                          font-size: 20px;
+                      }
+                      textarea {
+                            font-size: 20px;
+                      }
+            }
+            button {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .contact {
+        p { font-size: 40px;
+        }
+        a {
+            font-size: 40px;   
+        }
+        form {
+            margin: 0 auto;
+            width: calc(100% - 600px);
+            font-size: 40px;
+            fieldset {
+                      input {
+                          font-size: 40px;
+                      }
+                      textarea {
+                            font-size: 40px;
+                      }
+            }
+            button {
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+/*fin du layout page contact*/ 
 
 
+/* début du layout du footer*/
 footer {
     background-color: rgb(230, 228, 228);
     height: 40px;
@@ -409,8 +633,12 @@ footer {
     box-shadow: 0px -4px 10px rgba(167, 167, 167, 0.5);
     max-width: 100%;
     text-align: center;
-    a:hover {
-        text-decoration: underline;
+    a {
+        color: black;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }    
     }
 }
 
@@ -426,7 +654,7 @@ footer {
     }
 }
 
-
+/* fin du layout du footer*/
 
 
 

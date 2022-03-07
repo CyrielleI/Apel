@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Retrouvez toutes les informations et actualités concernant l'APEL de l'école Notre Dame du Rosaire sur ce site">
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+    <title>Contact - APEL Notre-Dame du Rosaire Chauvigny</title>
+
+</head>
+<body>
+    <header>
+        <div><img src="/assets/img/logo-APEL.jpg" alt="LogoAPEL"><a href="index.html"></a></img></div>
+        <div>
+            <h1>Association des Parents d'élèves de l'enseignement libre</h1>
+            <p>Ecole Notre-Dame du Rosaire - Chauvigny</p>
+        </div>  
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./index.html" title="Accueil - APEL Notre-Dame du Rosaire Chauvigny">Accueil</a></li>
+            <li><a href="./evenement.html" title="Evénements - APEL Notre-Dame du Rosaire Chauvigny">Evénements</a></li>
+            <li><a href="./contact.html" title="Contact - APEL Notre-Dame du Rosaire Chauvigny">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="contact">
+        <p>Pour nous contacter vous pouvez nous envoyer un mail à l'adresse suivante :</p>
+        <a href="mailto:apel-chauvigny@net-c.com">apel-chauvigny@net-c.com</a>
+        <p>Ou utiliser le formulaire ci-dessous :</p>
+        <form action="contact.php" method="post">
+            <fieldset>
+                <legend>Civilité</legend>
+                <div>
+                    <input type="radio" id="Mr" name="civilite" value="Mr">
+                    <label for="Mr" class="inline-label">Monsieur</label>
+                </div>
+                <div>
+                    <input type="radio" id="Mme" name="civilite" value="Mme">
+                    <label for="Mme" class="inline-label">Madame</label>
+                </div>
+                <label for="firstName">Prénom</label>
+                <input type="text" name="firstName" id="firstName" required placeholder="Votre prénom">
+        
+                <label for="lastName">Nom</label>
+                <input type="text" name="lastName" id="lastName" required placeholder="Votre nom">
+        
+                <label for="email">Adresse e-mail</label>
+                <input type="email" name="email" id="email" required placeholder="Votre adresse e-mail">
+        
+                <label for="phoneNumber">Numéro de téléphone</label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Votre numéro de téléphone">
+            </fieldset>
+            <fieldset>
+                <legend>Votre message</legend>
+                <label for="message">Message :</label>
+                <textarea name="address" id="address" cols="30" rows="10" placeholder="Votre message"></textarea>
+            </fieldset>
+        
+            <button type="submit">Envoyer</button>
+        </form>
+    </main>
+    <footer>
+        <div class="copyright">
+            <a href="./contact.html" title="Contact - APEL Notre-Dame du Rosaire Chauvigny">Nous contacter</a> - ©Copyright 2022 - APEL Notre-Dame du Rosaire Chauvigny
+        </div>
+    </footer>
+</body>
+</html>
